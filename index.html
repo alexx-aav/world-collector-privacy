@@ -10,14 +10,17 @@
 </style></head><body>
 
 <h1>World Collector — Privacy policy</h1>
-<p class="muted">Effective October 7, 2026.</p>
+<p class="muted">Effective October 9, 2026.</p>
 <p>World Collector recognises what a photo shows and keeps it in a collection. The app is published by the developer of World Collector. This page explains what data leaves your phone, where it goes and why.</p>
 
 <h2>What stays on your phone</h2>
-<p>Your collection, photos and settings are stored on your phone. The app has no accounts, no ads and no analytics, and it does not ask for your location. Metadata, including where a photo was taken, is removed from saved photos. You can delete a find in the app; uninstalling the app erases all its data.</p>
+<p>Your collection, photos and settings are stored on your phone. The app has no accounts, no ads and no analytics. Metadata, including where a photo was taken, is removed from saved photos, and the app keeps no record of your location. You can delete a find in the app; uninstalling the app erases all its data.</p>
 
 <h2>Cloud recognition</h2>
 <p>When a photo is recognised in the cloud, a reduced copy (at most 1024 pixels on its long edge, without metadata) is sent through our Google Apps Script server to the Google Gemini API. We do not keep these photos. Google processes them under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. With the on-device model switched on in settings, photos are recognised on the phone and are not sent anywhere.</p>
+
+<h2>Where a photo was taken</h2>
+<p>To tell apart lookalikes from different parts of the world, the app can use where a camera photo was taken. This happens only if "Use where the photo is taken" is on in settings (it is on by default) and you allow the app your approximate location. When you open the camera, the app reads the phone's approximate location; the phone's own geocoding service (on most phones, Google Play services) turns it into the name of the town, region and country, such as "Tbilisi, Georgia". Only that name goes with the photo to recognition: to Google Gemini for cloud recognition, or nowhere when the on-device model recognises it. Your coordinates are not sent to us or to Gemini, and neither they nor the name are kept. Photos picked from your gallery carry no location. You can turn this off in settings or deny the permission; recognition then works without it.</p>
 
 <h2>Encyclopedia</h2>
 <p>To find an article, the app sends the name of the recognised object and the app's language to Wikidata and Wikipedia (Wikimedia Foundation). Photos are not sent there. Wikimedia handles requests under its <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">privacy policy</a>.</p>
@@ -31,14 +34,14 @@
 <h2>Who receives data</h2>
 <p>Data leaves your phone only for the purposes above, and only to these kinds of parties:</p>
 <ul>
-<li><strong>Service providers that process data for us:</strong> Google (Apps Script and the Gemini API) receives photos sent for cloud recognition and reported chat answers. Reports are stored in the developer's Google Drive.</li>
+<li><strong>Service providers that process data for us:</strong> Google (Apps Script and the Gemini API) receives photos sent for cloud recognition, with the name of the place where a camera photo was taken when you allow it, and reported chat answers. Reports are stored in the developer's Google Drive.</li>
 <li><strong>Public knowledge services:</strong> Wikimedia Foundation (Wikidata and Wikipedia) receives the names of recognised objects.</li>
 <li><strong>File hosts:</strong> Hugging Face, Kaggle and GitHub, only when you download the on-device model.</li>
 </ul>
 <p>We do not sell your data, share it with advertisers or data brokers, or use it to track you.</p>
 
 <h2>Permissions</h2>
-<p>The app asks for the camera only to photograph what you want to recognise. Photos you pick from your gallery are opened through the system photo picker, one at a time; the app gets no access to the rest of your gallery.</p>
+<p>The app asks for the camera only to photograph what you want to recognise, and for your approximate location only to name the place where a camera photo is taken (see above). Photos you pick from your gallery are opened through the system photo picker, one at a time; the app gets no access to the rest of your gallery.</p>
 
 <h2>Security</h2>
 <p>All data the app sends travels over encrypted connections (HTTPS).</p>
